@@ -1,0 +1,25 @@
+{
+  "name": "codejam-canvas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./assets/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hellsingi/codejam-canvas.git"
+  },
+  "author": "ilya Dzemchanka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hellsingi/codejam-canvas/issues"
+  },
+  "homepage": "https://github.com/Hellsingi/codejam-canvas#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
