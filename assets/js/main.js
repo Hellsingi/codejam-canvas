@@ -11,11 +11,13 @@ imageSelection.addEventListener("click", evn => {
   switch (evn.target.value) {
     case "fourByFour": {
       path = "assets/data/4x4.json";
+      scale = 128;
       updateJSONCanvas(path);
       break;
     }
     case "thirtyTwo": {
       path = "assets/data/32x32.json";
+      scale = 16;
       updateJSONCanvas(path);
       break;
     }
@@ -46,11 +48,6 @@ async function updateJSONCanvas(path) {
       const width = data[0].length;
       const height = data.length;
 
-      if (width === 4) {
-        scale = 128;
-      } else if (width === 32) {
-        scale = 16;
-      }
       canvas.width = width * scale;
       canvas.height = height * scale;
 
