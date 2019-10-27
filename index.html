@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codejam Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/styles_reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="menu">
+      <button class="menu_btn btn_active"><i class="fas fa-bars"></i></button>
+      <h1>Codejam-Canvas</h1>
+      <button class="settings_btn btn_active"><i class="fas fa-ellipsis-v"></i></button>
+    </header>
+    <main class="pallete_canvas">
+      <section class="pallete">
+        <div class="tools">
+          <div class="toolsPallet">
+            <div class="item bucket">
+              <h2><i class="fas fa-fill-drip"></i>Paint bucket</h2>
+            </div>
+            <div class="item colorChoose">
+              <h2><i class="fas fa-eye-dropper"></i>Choose color</h2>
+            </div>
+            <div class="item move">
+              <h2><i class="fas fa-hand-point-up"></i>Move</h2>
+            </div>
+            <div class="item transorm">
+              <h2><i class="fas fa-compress-arrows-alt"></i>Transform</h2>
+            </div>
+          </div>
+
+          <div class="colorPallet">
+            <div class="item" id="currentColor">
+              <div class="colorIcon currentColorIcon">
+                <form>
+                  <input class="colorChooser" type="color" />
+                </form>
+              </div>
+              <h2>Current color</h2>
+            </div>
+            <div class="item" id="prevColor">
+              <div class="colorIcon prevColorIcon"></div>
+              <h2>Prev color</h2>
+            </div>
+            <div class="item" id="basicColorOne">
+              <div class="colorIcon" style="background: red;"></div>
+              <h2>Red</h2>
+            </div>
+            <div class="item" id="basicColorTwo">
+              <div class="colorIcon" style="background: blue;"></div>
+              <h2>Blue</h2>
+            </div>
+          </div>
+        </div>
+        <canvas  id="canvas">
+          canvas
+        </canvas>
+
+        <div class="image-selection"  id="image-selection">
+          <input type="radio" name="image-selection" value="fourByFour" id="btn4"/>4x4 <Br />
+          <input type="radio" name="image-selection" value="thirtyTwo" id="btn32" />32x32<Br />
+          <input type="radio" name="image-selection" value="rsImage" id="rsImage"/>RS Image<Br />
+        </div>
+        
+      </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
